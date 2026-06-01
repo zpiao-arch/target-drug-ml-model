@@ -1,0 +1,4 @@
+split,train_examples,valid_examples,valid_positive_rate,accuracy,balanced_accuracy,roc_auc,precision,recall,f1,confusion_matrix
+random_pair_split,29313,7329,0.5121,0.8777,0.8787,0.9418,0.9149,0.8393,0.8755,"[[3283, 293], [603, 3150]]"
+target_group_split,29385,7257,0.4917,0.7223,0.7181,0.893,0.943,0.4633,0.6213,"[[3589, 100], [1915, 1653]]"
+drug_group_split,28336,8306,0.5,0.7998,0.7998,0.8931,0.8978,0.6766,0.7717,"[[3833, 320], [1343, 2810]]"

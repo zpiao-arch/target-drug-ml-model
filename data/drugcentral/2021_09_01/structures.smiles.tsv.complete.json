@@ -1,0 +1,8 @@
+{
+  "item_id": "drugcentral_structures_smiles",
+  "source": "DrugCentral",
+  "url": "https://unmtid-dbs.net/download/DrugCentral/2021_09_01/structures.smiles.tsv",
+  "local_path": "data_lake/drugcentral/2021_09_01/structures.smiles.tsv",
+  "bytes": 1089436,
+  "completed_at": "2026-05-29T19:01:45+0800"
+}

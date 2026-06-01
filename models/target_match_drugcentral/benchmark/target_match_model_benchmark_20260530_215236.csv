@@ -1,0 +1,11 @@
+split,model,train_examples,valid_examples,valid_positive_rate,seconds,accuracy,balanced_accuracy,roc_auc,pr_auc,precision,recall,f1
+random_pair_split,current_target_match_net_existing,29313,7328,0.5,,0.8413,,0.9253,,,,
+random_pair_split,logistic_l2,29313,7329,0.4999,24.96,0.6851,0.6851,0.7537,0.7329,0.6865,0.6812,0.6838
+random_pair_split,random_forest,29313,7329,0.4999,6.53,0.8513,0.8513,0.9253,0.929,0.8853,0.807,0.8444
+random_pair_split,hist_gradient_boosting,29313,7329,0.4999,31.19,0.836,0.836,0.9124,0.9121,0.8604,0.8021,0.8302
+target_group_split,logistic_l2,29385,7257,0.4917,25.99,0.6463,0.6455,0.6908,0.6556,0.6539,0.5961,0.6237
+target_group_split,random_forest,29385,7257,0.4917,6.69,0.7054,0.7009,0.8699,0.8676,0.9276,0.4347,0.592
+target_group_split,hist_gradient_boosting,29385,7257,0.4917,45.18,0.7507,0.7485,0.8522,0.8517,0.8325,0.6172,0.7088
+drug_group_split,logistic_l2,28336,8306,0.5,31.15,0.6889,0.6889,0.749,0.7399,0.6816,0.7091,0.6951
+drug_group_split,random_forest,28336,8306,0.5,7.34,0.8233,0.8233,0.896,0.9037,0.8796,0.7491,0.8091
+drug_group_split,hist_gradient_boosting,28336,8306,0.5,66.15,0.8129,0.8129,0.8906,0.8955,0.8506,0.7592,0.8023

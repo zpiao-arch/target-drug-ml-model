@@ -1,0 +1,8 @@
+{
+  "item_id": "drugcentral_pmda",
+  "source": "DrugCentral",
+  "url": "https://drugcentral.org/static/PMDA_Approved.csv",
+  "local_path": "data_lake/drugcentral/static/PMDA_Approved.csv",
+  "bytes": 7716,
+  "completed_at": "2026-05-29T18:59:27+0800"
+}

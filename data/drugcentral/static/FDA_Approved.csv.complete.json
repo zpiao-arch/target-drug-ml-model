@@ -1,0 +1,8 @@
+{
+  "item_id": "drugcentral_fda",
+  "source": "DrugCentral",
+  "url": "https://drugcentral.org/static/FDA_Approved.csv",
+  "local_path": "data_lake/drugcentral/static/FDA_Approved.csv",
+  "bytes": 42482,
+  "completed_at": "2026-05-29T18:59:27+0800"
+}

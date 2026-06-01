@@ -1,0 +1,14 @@
+# Runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Large trained artifacts are released separately as GitHub Release assets
+models/target_match_drugcentral/extra_trees/target_match_extra_trees.joblib
+*.zip
+
+# Local secrets
+.env
+*.key
+*.pem

@@ -1,0 +1,10 @@
+split,model,train_examples,valid_examples,valid_positive_rate,seconds,accuracy,balanced_accuracy,roc_auc,pr_auc,precision,recall,f1
+random_pair_split,extra_trees,29313,7329,0.4999,4.81,0.8798,0.8798,0.9418,0.9438,0.9116,0.8412,0.8749
+random_pair_split,hist_gradient_boosting,29313,7329,0.4999,27.74,0.8213,0.8213,0.9039,0.9045,0.8509,0.7789,0.8133
+random_pair_split,catboost,29313,7329,0.4999,10.93,0.8032,0.8032,0.8868,0.8907,0.8398,0.7495,0.792
+target_group_split,extra_trees,29385,7257,0.4917,6.71,0.7226,0.7184,0.893,0.8902,0.943,0.4638,0.6218
+target_group_split,hist_gradient_boosting,29385,7257,0.4917,36.58,0.7364,0.7341,0.8403,0.8406,0.8196,0.5947,0.6893
+target_group_split,catboost,29385,7257,0.4917,13.68,0.7371,0.7351,0.8361,0.833,0.8049,0.6141,0.6967
+drug_group_split,extra_trees,28336,8306,0.5,5.78,0.8,0.8,0.8931,0.901,0.8978,0.6771,0.772
+drug_group_split,hist_gradient_boosting,28336,8306,0.5,24.36,0.8033,0.8033,0.8821,0.8866,0.8452,0.7426,0.7906
+drug_group_split,catboost,28336,8306,0.5,9.31,0.7918,0.7918,0.8748,0.8825,0.8217,0.7455,0.7817

@@ -1,0 +1,8 @@
+{
+  "item_id": "drugcentral_ema",
+  "source": "DrugCentral",
+  "url": "https://drugcentral.org/static/EMA_Approved.csv",
+  "local_path": "data_lake/drugcentral/static/EMA_Approved.csv",
+  "bytes": 8099,
+  "completed_at": "2026-05-29T18:59:24+0800"
+}

@@ -1,0 +1,473 @@
+{
+  "command": "target-match-evaluate",
+  "model_dir": "ai_mol_loop/models/target_match_drugcentral",
+  "evaluated_targets": 50,
+  "min_positive_drugs": 1,
+  "top_k": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "metrics": {
+    "hit_at_1": 0.7,
+    "hit_at_3": 0.8,
+    "hit_at_5": 0.92,
+    "hit_at_10": 0.98,
+    "mean_reciprocal_rank": 0.7756
+  },
+  "rows": [
+    {
+      "target_key": "A0A0K1CY61",
+      "target_name": "Nonstructural protein NS3-4A",
+      "query": "A0A0K1CY61 A0A0K1CY61_9HEPC Nonstructural protein NS3-4A Unclassified Hepatitis C virus",
+      "positive_drugs": 3,
+      "first_hit_rank": 1,
+      "top_drug": "boceprevir",
+      "top_score": 0.974017
+    },
+    {
+      "target_key": "A0A0W8ASI8",
+      "target_name": "Peptidoglycan D,D-transpeptidase MrdA",
+      "query": "A0A0W8ASI8 mrdA A0A0W8ASI8_KLEPN Peptidoglycan D,D-transpeptidase MrdA Enzyme Klebsiella pneumoniae",
+      "positive_drugs": 1,
+      "first_hit_rank": 1,
+      "top_drug": "cefiderocol",
+      "top_score": 0.975215
+    },
+    {
+      "target_key": "A0A113T0T6",
+      "target_name": "6-hydroxymethyl-7,8-dihydropterin pyrophosphokinase",
+      "query": "A0A113T0T6 PPPK-DHPS A0A113T0T6_PLABE 6-hydroxymethyl-7,8-dihydropterin pyrophosphokinase Unclassified Plasmodium berghei",
+      "positive_drugs": 2,
+      "first_hit_rank": 2,
+      "top_drug": "sulfadoxine",
+      "top_score": 0.963321
+    },
+    {
+      "target_key": "A0A5E6DR09",
+      "target_name": "Penicillin-binding protein 4",
+      "query": "A0A5E6DR09 pbpD_1 A0A5E6DR09_KLEPN Penicillin-binding protein 4 Enzyme Klebsiella pneumoniae",
+      "positive_drugs": 1,
+      "first_hit_rank": 1,
+      "top_drug": "cefiderocol",
+      "top_score": 0.966346
+    },
+    {
+      "target_key": "A0PJK1",
+      "target_name": "Sodium/glucose cotransporter 5",
+      "query": "A0PJK1 SLC5A10 SC5AA_HUMAN Sodium/glucose cotransporter 5 Transporter Homo sapiens",
+      "positive_drugs": 1,
+      "first_hit_rank": 1,
+      "top_drug": "empagliflozin",
+      "top_score": 0.961555
+    },
+    {
+      "target_key": "A0QNE0",
+      "target_name": "DNULL gyrase subunit B",
+      "query": "A0QNE0 gyrB GYRB_MYCS2 DNULL gyrase subunit B Enzyme Mycolicibacterium smegmatis",
+      "positive_drugs": 1,
+      "first_hit_rank": 9,
+      "top_drug": "gatifloxacin",
+      "top_score": 0.979838
+    },
+    {
+      "target_key": "A0ZX81",
+      "target_name": "Beta-lactamase",
+      "query": "A0ZX81 blaSHV-72 A0ZX81_KLEPN Beta-lactamase Enzyme Klebsiella pneumoniae",
+      "positive_drugs": 2,
+      "first_hit_rank": 1,
+      "top_drug": "clavulanic acid",
+      "top_score": 0.979198
+    },
+    {
+      "target_key": "A1E3K9",
+      "target_name": "Beta-lactamase",
+      "query": "A1E3K9 blaSCO-1 A1E3K9_ECOLX Beta-lactamase Enzyme Escherichia coli",
+      "positive_drugs": 3,
+      "first_hit_rank": 1,
+      "top_drug": "tazobactam",
+      "top_score": 0.974133
+    },
+    {
+      "target_key": "A1KS91",
+      "target_name": "Penicillin-binding protein 1",
+      "query": "A1KS91 ponA A1KS91_NEIMF Penicillin-binding protein 1 Enzyme Neisseria meningitidis serogroup C / serotype 2a (strain ATCC 700532 / DSM 15464 / FAM18)",
+      "positive_drugs": 5,
+      "first_hit_rank": 1,
+      "top_drug": "cefetamet pivoxil",
+      "top_score": 0.964313
+    },
+    {
+      "target_key": "A2AMW3",
+      "target_name": "GABA-A receptor; anion channel",
+      "query": "A2AMW3|P16305|P22723|P22933|P26048|P26049|P27681|P50571|P62812|P63080|Q8BHJ7|Q8QZW7|Q9D6F4|Q9JLF1|Q9R0Y8 Gabre|Gabra6|Gabrg2|Gabrd|Gabra2|Gabra3|Gabrg3|Gabrb1|Gabra1|Gabrb3|Gabra5|Gabrp|Gabra4|Gabrq|Gabrg1 A2AMW3_MOUSE|GBRA6_MOUSE|GBRG2_MOUSE|GBRD_MOUSE|GBRA2_MOUSE|GBRA3_MOUSE|GBRG3_MOUSE|GBRB1_MOUSE|GBRA1_MOUSE|GBRB3_MOUSE|GBRA5_MOUSE|GBRP_MOUSE|GBRA4_MOUSE|GBRT_MOUSE|GBRG1_MOUSE GABA-A receptor; anion channel Ion channel Mus musculus",
+      "positive_drugs": 2,
+      "first_hit_rank": 0,
+      "top_drug": "zopiclone",
+      "top_score": 0.985967
+    },
+    {
+      "target_key": "A2APX8",
+      "target_name": "Sodium channel protein type 1 subunit alpha",
+      "query": "A2APX8 Scn1a SCN1A_MOUSE Sodium channel protein type 1 subunit alpha Ion channel Mus musculus",
+      "positive_drugs": 1,
+      "first_hit_rank": 3,
+      "top_drug": "bupivacaine",
+      "top_score": 0.965068
+    },
+    {
+      "target_key": "A2PZ98",
+      "target_name": "Acetylcholinesterase",
+      "query": "A2PZ98 Ace1 A2PZ98_9NEOP Acetylcholinesterase Enzyme Pediculus humanus capitis",
+      "positive_drugs": 1,
+      "first_hit_rank": 1,
+      "top_drug": "malathion",
+      "top_score": 0.935163
+    },
+    {
+      "target_key": "A2RI47",
+      "target_name": "Thiamine transporter ThiT",
+      "query": "A2RI47 thiT THIT_LACLM Thiamine transporter ThiT Transporter Lactococcus lactis subsp. cremoris",
+      "positive_drugs": 1,
+      "first_hit_rank": 1,
+      "top_drug": "thiamine",
+      "top_score": 0.958396
+    },
+    {
+      "target_key": "A2RP81",
+      "target_name": "Beta-lactamase",
+      "query": "A2RP81 blaPER-2 A2RP81_CITFR Beta-lactamase Enzyme Citrobacter freundii",
+      "positive_drugs": 6,
+      "first_hit_rank": 1,
+      "top_drug": "aztreonam",
+      "top_score": 0.967256
+    },
+    {
+      "target_key": "A3EZI9",
+      "target_name": "NS3",
+      "query": "A3EZI9 NS3 A3EZI9_9HEPC NS3 Enzyme Hepatitis C virus",
+      "positive_drugs": 7,
+      "first_hit_rank": 1,
+      "top_drug": "grazoprevir",
+      "top_score": 0.976617
+    },
+    {
+      "target_key": "A3RGC1",
+      "target_name": "Vitamin D3 receptor",
+      "query": "A3RGC1 VDR VDR_PIG Vitamin D3 receptor Nuclear hormone receptor Sus scrofa",
+      "positive_drugs": 1,
+      "first_hit_rank": 4,
+      "top_drug": "maxacalcitol",
+      "top_score": 0.961629
+    },
+    {
+      "target_key": "A3RLP8",
+      "target_name": "Thymidine kinase",
+      "query": "A3RLP8 UL23 A3RLP8_CHV1 Thymidine kinase Kinase Cercopithecine herpesvirus 1",
+      "positive_drugs": 5,
+      "first_hit_rank": 1,
+      "top_drug": "penciclovir",
+      "top_score": 0.978331
+    },
+    {
+      "target_key": "A4KCT8",
+      "target_name": "Beta-lactamase",
+      "query": "A4KCT8 BlaGIL-1 A4KCT8_9ENTR Beta-lactamase Enzyme Citrobacter gillenii",
+      "positive_drugs": 2,
+      "first_hit_rank": 1,
+      "top_drug": "clavulanic acid",
+      "top_score": 0.972957
+    },
+    {
+      "target_key": "A4TVL0",
+      "target_name": "Cereblon isoform 4",
+      "query": "A4TVL0 A4TVL0_9PROT Cereblon isoform 4 Unclassified Magnetospirillum gryphiswaldense",
+      "positive_drugs": 4,
+      "first_hit_rank": 1,
+      "top_drug": "lenalidomide",
+      "top_score": 0.953668
+    },
+    {
+      "target_key": "A4ZYU9",
+      "target_name": "Beta-lactamase",
+      "query": "A4ZYU9 blaACC-4 A4ZYU9_ECOLX Beta-lactamase Enzyme Escherichia coli",
+      "positive_drugs": 2,
+      "first_hit_rank": 1,
+      "top_drug": "aztreonam",
+      "top_score": 0.971858
+    },
+    {
+      "target_key": "A5H660",
+      "target_name": "Histone deacetylase 8",
+      "query": "A5H660 HDAC8 A5H660_SCHMA Histone deacetylase 8 Unclassified Schistosoma mansoni",
+      "positive_drugs": 2,
+      "first_hit_rank": 3,
+      "top_drug": "romidepsin",
+      "top_score": 0.974242
+    },
+    {
+      "target_key": "A5PKW4",
+      "target_name": "PH and SEC7 domain-containing protein 1",
+      "query": "A5PKW4 PSD PSD1_HUMAN PH and SEC7 domain-containing protein 1 Unclassified Homo sapiens",
+      "positive_drugs": 1,
+      "first_hit_rank": 1,
+      "top_drug": "bortezomib",
+      "top_score": 0.948932
+    },
+    {
+      "target_key": "A5X5Y0",
+      "target_name": "Serotonin 3 (5-HT3) receptor",
+      "query": "A5X5Y0|O95264|P46098|Q70Z44|Q8WXA8 HTR3E|HTR3B|HTR3A|HTR3D|HTR3C 5HT3E_HUMAN|5HT3B_HUMAN|5HT3A_HUMAN|5HT3D_HUMAN|5HT3C_HUMAN Serotonin 3 (5-HT3) receptor Ion channel Homo sapiens",
+      "positive_drugs": 3,
+      "first_hit_rank": 4,
+      "top_drug": "bupivacaine",
+      "top_score": 0.982193
+    },
+    {
+      "target_key": "A5Z252",
+      "target_name": "Neuraminidase",
+      "query": "A5Z252 A5Z252_9INFA Neuraminidase Enzyme Influenza A virus (A/Turkey/651242/2006(H5N1))",
+      "positive_drugs": 3,
+      "first_hit_rank": 1,
+      "top_drug": "oseltamivir",
+      "top_score": 0.975307
+    },
+    {
+      "target_key": "A6T4M7",
+      "target_name": "Peptidoglycan D,D-transpeptidase FtsI",
+      "query": "A6T4M7 ftsI A6T4M7_KLEP7 Peptidoglycan D,D-transpeptidase FtsI Enzyme Klebsiella pneumoniae subsp. pneumoniae (strain ATCC 700721 / MGH 78578)",
+      "positive_drugs": 1,
+      "first_hit_rank": 4,
+      "top_drug": "carumonam",
+      "top_score": 0.977938
+    },
+    {
+      "target_key": "A6T4V3",
+      "target_name": "Penicillin-binding protein 1B",
+      "query": "A6T4V3 mrcB A6T4V3_KLEP7 Penicillin-binding protein 1B Enzyme Klebsiella pneumoniae subsp. pneumoniae (strain ATCC 700721 / MGH 78578)",
+      "positive_drugs": 1,
+      "first_hit_rank": 4,
+      "top_drug": "cefixime",
+      "top_score": 0.969053
+    },
+    {
+      "target_key": "A6YCJ1",
+      "target_name": "Astrosclerin-3",
+      "query": "A6YCJ1 A6YCJ1_9METZ Astrosclerin-3 Enzyme Astrosclera willeyana",
+      "positive_drugs": 15,
+      "first_hit_rank": 1,
+      "top_drug": "hydrochlorothiazide",
+      "top_score": 0.971178
+    },
+    {
+      "target_key": "A8RR46",
+      "target_name": "Beta-lactamase",
+      "query": "A8RR46 bcl1 A8RR46_BACCS Beta-lactamase Enzyme Bacillus clausii",
+      "positive_drugs": 3,
+      "first_hit_rank": 1,
+      "top_drug": "clavulanic acid",
+      "top_score": 0.97558
+    },
+    {
+      "target_key": "A9XFY4",
+      "target_name": "Nicotinic acetylcholine receptor alpha 5 subunit",
+      "query": "A9XFY4 nAChRalpha5 A9XFY4_MUSDO Nicotinic acetylcholine receptor alpha 5 subunit Ion channel Musca domestica",
+      "positive_drugs": 5,
+      "first_hit_rank": 1,
+      "top_drug": "nicotine",
+      "top_score": 0.98801
+    },
+    {
+      "target_key": "B0BL08",
+      "target_name": "Dihydrofolate reductase",
+      "query": "B0BL08 dfrA17 B0BL08_ECOLX Dihydrofolate reductase Enzyme Escherichia coli",
+      "positive_drugs": 13,
+      "first_hit_rank": 1,
+      "top_drug": "methotrexate",
+      "top_score": 0.980567
+    },
+    {
+      "target_key": "B0FL73",
+      "target_name": "Beta-1 adrenergic receptor",
+      "query": "B0FL73 ADRB1 B0FL73_CAVPO Beta-1 adrenergic receptor GPCR Cavia porcellus",
+      "positive_drugs": 13,
+      "first_hit_rank": 2,
+      "top_drug": "bufuralol",
+      "top_score": 0.998489
+    },
+    {
+      "target_key": "B0K020",
+      "target_name": "CDGSH iron-sulfur domain-containing protein 1",
+      "query": "B0K020 Cisd1 CISD1_RAT CDGSH iron-sulfur domain-containing protein 1 Unclassified Rattus norvegicus",
+      "positive_drugs": 2,
+      "first_hit_rank": 5,
+      "top_drug": "dantrolene",
+      "top_score": 0.980022
+    },
+    {
+      "target_key": "B0LPN4",
+      "target_name": "Ryanodine receptor 2",
+      "query": "B0LPN4 Ryr2 RYR2_RAT Ryanodine receptor 2 Ion channel Rattus norvegicus",
+      "positive_drugs": 1,
+      "first_hit_rank": 1,
+      "top_drug": "hydralazine",
+      "top_score": 0.933134
+    },
+    {
+      "target_key": "B1LRJ1",
+      "target_name": "Type IV secretion-like conjugative transfer relaxase protein TraI",
+      "query": "B1LRJ1 traI B1LRJ1_ECOSM Type IV secretion-like conjugative transfer relaxase protein TraI Unclassified Escherichia coli",
+      "positive_drugs": 2,
+      "first_hit_rank": 1,
+      "top_drug": "clodronic acid",
+      "top_score": 0.968802
+    },
+    {
+      "target_key": "B1PL86",
+      "target_name": "Beta-lactamase",
+      "query": "B1PL86 blaKPC-4 B1PL86_KLEPN Beta-lactamase Enzyme Klebsiella pneumoniae",
+      "positive_drugs": 1,
+      "first_hit_rank": 1,
+      "top_drug": "relebactam",
+      "top_score": 0.971674
+    },
+    {
+      "target_key": "B1WBY8",
+      "target_name": "Histone deacetylase",
+      "query": "B1WBY8|Q4QQW4|Q5RJZ2|Q6P6W3|Q99P96|Q99P97|Q99P99 Hdac2|Hdac1|Hdac5|Hdac3|Hdac7|Hdac6|Hdac4 B1WBY8_RAT|HDAC1_RAT|Q5RJZ2_RAT|HDAC3_RAT|HDAC7_RAT|Q99P97_RAT|HDAC4_RAT Histone deacetylase Enzyme Rattus norvegicus",
+      "positive_drugs": 1,
+      "first_hit_rank": 8,
+      "top_drug": "belinostat",
+      "top_score": 0.991667
+    },
+    {
+      "target_key": "B2RXH2",
+      "target_name": "Lysine-specific demethylase 4E",
+      "query": "B2RXH2 KDM4E KDM4E_HUMAN Lysine-specific demethylase 4E Enzyme Homo sapiens",
+      "positive_drugs": 5,
+      "first_hit_rank": 1,
+      "top_drug": "carbidopa",
+      "top_score": 0.971418
+    },
+    {
+      "target_key": "B2V8E3",
+      "target_name": "Carbonate dehydratase",
+      "query": "B2V8E3 B2V8E3_SULSY Carbonate dehydratase Enzyme Sulfurihydrogenibium sp. (strain YO3AOP1)",
+      "positive_drugs": 15,
+      "first_hit_rank": 1,
+      "top_drug": "acetazolamide",
+      "top_score": 0.97423
+    },
+    {
+      "target_key": "B2ZB02",
+      "target_name": "Tyrosinase",
+      "query": "B2ZB02 B2ZB02_BACME Tyrosinase Unclassified Bacillus megaterium",
+      "positive_drugs": 1,
+      "first_hit_rank": 1,
+      "top_drug": "kojic acid",
+      "top_score": 0.963198
+    },
+    {
+      "target_key": "B2ZTR6",
+      "target_name": "Beta-lactamase",
+      "query": "B2ZTR6 B2ZTR6_ACIBA Beta-lactamase Enzyme Acinetobacter baumannii",
+      "positive_drugs": 3,
+      "first_hit_rank": 1,
+      "top_drug": "aztreonam",
+      "top_score": 0.959055
+    },
+    {
+      "target_key": "B3DH72",
+      "target_name": "Opioid receptor, delta 1b",
+      "query": "B3DH72 oprd1b B3DH72_DANRE Opioid receptor, delta 1b GPCR Danio rerio",
+      "positive_drugs": 1,
+      "first_hit_rank": 1,
+      "top_drug": "morphine",
+      "top_score": 0.953355
+    },
+    {
+      "target_key": "B4URF0",
+      "target_name": "Neuraminidase",
+      "query": "B4URF0 B4URF0_9INFA Neuraminidase Enzyme Influenza A virus (A/WSN/1933(H1N1))",
+      "positive_drugs": 6,
+      "first_hit_rank": 1,
+      "top_drug": "zanamivir",
+      "top_score": 0.968945
+    },
+    {
+      "target_key": "B5SU02",
+      "target_name": "Alpha carbonic anhydrase",
+      "query": "B5SU02 CA B5SU02_9CNID Alpha carbonic anhydrase Enzyme Stylophora pistillata",
+      "positive_drugs": 14,
+      "first_hit_rank": 1,
+      "top_drug": "dichlorphenamide",
+      "top_score": 0.999345
+    },
+    {
+      "target_key": "B5THE3",
+      "target_name": "Sucrase-isomaltase",
+      "query": "B5THE3 Sis B5THE3_MOUSE Sucrase-isomaltase Enzyme Mus musculus",
+      "positive_drugs": 1,
+      "first_hit_rank": 1,
+      "top_drug": "miglustat",
+      "top_score": 0.968603
+    },
+    {
+      "target_key": "B8R6A5",
+      "target_name": "Beta-lactamase",
+      "query": "B8R6A5 penB1 B8R6A5_9BURK Beta-lactamase Enzyme Burkholderia cenocepacia",
+      "positive_drugs": 1,
+      "first_hit_rank": 1,
+      "top_drug": "tazobactam",
+      "top_score": 0.977987
+    },
+    {
+      "target_key": "C0HJB3",
+      "target_name": "Alpha-mannosidase",
+      "query": "C0HJB3 MANULL_CANEN Alpha-mannosidase Enzyme Canavalia ensiformis",
+      "positive_drugs": 1,
+      "first_hit_rank": 1,
+      "top_drug": "miglitol",
+      "top_score": 0.970836
+    },
+    {
+      "target_key": "C0IX24",
+      "target_name": "Carbonic anhydrase",
+      "query": "C0IX24 CA2 C0IX24_9CNID Carbonic anhydrase Enzyme Stylophora pistillata",
+      "positive_drugs": 14,
+      "first_hit_rank": 3,
+      "top_drug": "chlorothiazide",
+      "top_score": 0.998781
+    },
+    {
+      "target_key": "C1KIQ2",
+      "target_name": "NS3 protease",
+      "query": "C1KIQ2 C1KIQ2_9HEPC NS3 protease Unclassified Hepacivirus C",
+      "positive_drugs": 1,
+      "first_hit_rank": 5,
+      "top_drug": "asunaprevir",
+      "top_score": 0.978251
+    },
+    {
+      "target_key": "C3SIU2",
+      "target_name": "Met repressor",
+      "query": "C3SIU2 metJ C3SIU2_ECOLX Met repressor Unclassified Escherichia coli",
+      "positive_drugs": 1,
+      "first_hit_rank": 1,
+      "top_drug": "ademetionine",
+      "top_score": 0.970624
+    },
+    {
+      "target_key": "C3SLN2",
+      "target_name": "DNA gyrase subunit B",
+      "query": "C3SLN2 gyrB C3SLN2_ECOLX DNA gyrase subunit B Enzyme Escherichia coli",
+      "positive_drugs": 1,
+      "first_hit_rank": 7,
+      "top_drug": "moxifloxacin",
+      "top_score": 0.982986
+    }
+  ],
+  "boundary": "Computational target-drug matching only. This model does not prove biological activity, potency, efficacy, toxicity, safety, dosing, or clinical usefulness.",
+  "note": "Top-K retrieval is measured against local DrugCentral known target-drug relations; it is not biological validation."
+}

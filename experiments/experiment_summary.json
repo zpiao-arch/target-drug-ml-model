@@ -1,0 +1,688 @@
+{
+  "dataset": {
+    "positive_pairs": 18321,
+    "negative_pairs": 18321,
+    "examples": 36642,
+    "structures": 4099,
+    "targets": 2729,
+    "negative_ratio": 1,
+    "boundary": "Computational target-drug matching only. This model does not prove biological activity, potency, efficacy, toxicity, safety, dosing, or clinical usefulness."
+  },
+  "metrics": {
+    "random_pair_split": {
+      "split": "random_pair_split",
+      "train_examples": 29313,
+      "valid_examples": 7329,
+      "valid_positive_rate": 0.5121,
+      "accuracy": 0.8777,
+      "balanced_accuracy": 0.8787,
+      "roc_auc": 0.9418,
+      "precision": 0.9149,
+      "recall": 0.8393,
+      "f1": 0.8755,
+      "confusion_matrix": [
+        [
+          3283,
+          293
+        ],
+        [
+          603,
+          3150
+        ]
+      ]
+    },
+    "target_group_split": {
+      "split": "target_group_split",
+      "train_examples": 29385,
+      "valid_examples": 7257,
+      "valid_positive_rate": 0.4917,
+      "accuracy": 0.7223,
+      "balanced_accuracy": 0.7181,
+      "roc_auc": 0.893,
+      "precision": 0.943,
+      "recall": 0.4633,
+      "f1": 0.6213,
+      "confusion_matrix": [
+        [
+          3589,
+          100
+        ],
+        [
+          1915,
+          1653
+        ]
+      ]
+    },
+    "drug_group_split": {
+      "split": "drug_group_split",
+      "train_examples": 28336,
+      "valid_examples": 8306,
+      "valid_positive_rate": 0.5,
+      "accuracy": 0.7998,
+      "balanced_accuracy": 0.7998,
+      "roc_auc": 0.8931,
+      "precision": 0.8978,
+      "recall": 0.6766,
+      "f1": 0.7717,
+      "confusion_matrix": [
+        [
+          3833,
+          320
+        ],
+        [
+          1343,
+          2810
+        ]
+      ]
+    }
+  },
+  "learning_curve_rows": [
+    {
+      "n_estimators": 10,
+      "train_log_loss": 0.10011514622624414,
+      "valid_log_loss": 0.41524877704111063,
+      "valid_roc_auc": 0.9235958362318348
+    },
+    {
+      "n_estimators": 20,
+      "train_log_loss": 0.09899251139279523,
+      "valid_log_loss": 0.3735491442888067,
+      "valid_roc_auc": 0.9347960483216708
+    },
+    {
+      "n_estimators": 40,
+      "train_log_loss": 0.09870299964016914,
+      "valid_log_loss": 0.3518512431741491,
+      "valid_roc_auc": 0.9401178162615321
+    },
+    {
+      "n_estimators": 80,
+      "train_log_loss": 0.09927742575152862,
+      "valid_log_loss": 0.3525870406412549,
+      "valid_roc_auc": 0.9399284450143092
+    },
+    {
+      "n_estimators": 120,
+      "train_log_loss": 0.09935243791764241,
+      "valid_log_loss": 0.34729482877572243,
+      "valid_roc_auc": 0.9413639856198561
+    },
+    {
+      "n_estimators": 180,
+      "train_log_loss": 0.09935994946440804,
+      "valid_log_loss": 0.3466214734847687,
+      "valid_roc_auc": 0.941819922138352
+    }
+  ],
+  "feature_importance_blocks": {
+    "Morgan 指纹位点": 0.4025919679946405,
+    "RDKit 标量描述符": 0.02179352981568104,
+    "靶点文本哈希": 0.5756145021896785
+  },
+  "shap_blocks": {
+    "Morgan 指纹位点": 0.2915426728948055,
+    "RDKit 标量描述符": 0.013451576327258461,
+    "靶点文本哈希": 0.48640665335446787
+  },
+  "shap_validation_sample_size": 40,
+  "multi_disease_cases": [
+    {
+      "case": "甲/乙流 NA",
+      "target": "neuraminidase",
+      "rank": 1,
+      "drug_name": "zanamivir",
+      "score": 0.95918,
+      "model_probability": 0.591799,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Neuraminidase",
+      "evidence_organism": "Influenza A virus (strain A/Puerto Rico/8/1934 H1N1)",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "甲/乙流 NA",
+      "target": "neuraminidase",
+      "rank": 2,
+      "drug_name": "oseltamivir",
+      "score": 0.950647,
+      "model_probability": 0.506468,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Neuraminidase",
+      "evidence_organism": "Influenza A virus (strain A/Puerto Rico/8/1934 H1N1)",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "甲/乙流 NA",
+      "target": "neuraminidase",
+      "rank": 3,
+      "drug_name": "peramivir",
+      "score": 0.946202,
+      "model_probability": 0.462024,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Neuraminidase",
+      "evidence_organism": "Influenza A virus (strain A/Puerto Rico/8/1934 H1N1)",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "甲/乙流 NA",
+      "target": "neuraminidase",
+      "rank": 4,
+      "drug_name": "laninamivir octanoate hydrate",
+      "score": 0.82585,
+      "model_probability": 0.496799,
+      "known_target_similarity": 0.95,
+      "evidence_target": "Neuraminidase",
+      "evidence_organism": "Influenza A virus (A/WSN/1933(H1N1))",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "甲/乙流 NA",
+      "target": "neuraminidase",
+      "rank": 5,
+      "drug_name": "rutoside",
+      "score": 0.823927,
+      "model_probability": 0.458333,
+      "known_target_similarity": 0.95,
+      "evidence_target": "Neuraminidase",
+      "evidence_organism": "Influenza A virus (A/WSN/1933(H1N1))",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "HIV 逆转录酶",
+      "target": "reverse transcriptase",
+      "rank": 1,
+      "drug_name": "zidovudine",
+      "score": 0.965759,
+      "model_probability": 0.657593,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Pol polyprotein",
+      "evidence_organism": "Human immunodeficiency virus 1",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "HIV 逆转录酶",
+      "target": "reverse transcriptase",
+      "rank": 2,
+      "drug_name": "etravirine",
+      "score": 0.961611,
+      "model_probability": 0.616111,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Reverse transcriptase/RNaseH",
+      "evidence_organism": "Human immunodeficiency virus 1",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "HIV 逆转录酶",
+      "target": "reverse transcriptase",
+      "rank": 3,
+      "drug_name": "delavirdine",
+      "score": 0.96063,
+      "model_probability": 0.606296,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Reverse transcriptase/RNaseH",
+      "evidence_organism": "Human immunodeficiency virus 1",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "HIV 逆转录酶",
+      "target": "reverse transcriptase",
+      "rank": 4,
+      "drug_name": "stavudine",
+      "score": 0.959833,
+      "model_probability": 0.598333,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Reverse transcriptase/RNaseH",
+      "evidence_organism": "Human immunodeficiency virus 1",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "HIV 逆转录酶",
+      "target": "reverse transcriptase",
+      "rank": 5,
+      "drug_name": "efavirenz",
+      "score": 0.957269,
+      "model_probability": 0.572685,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Reverse transcriptase/RNaseH",
+      "evidence_organism": "Human immunodeficiency virus 1",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "HCV NS5B",
+      "target": "RNA polymerase",
+      "rank": 1,
+      "drug_name": "ribavirin",
+      "score": 0.943935,
+      "model_probability": 0.439352,
+      "known_target_similarity": 1.0,
+      "evidence_target": "NS5B protein",
+      "evidence_organism": "Hepatitis C virus",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "HCV NS5B",
+      "target": "RNA polymerase",
+      "rank": 2,
+      "drug_name": "sofosbuvir",
+      "score": 0.938605,
+      "model_probability": 0.386049,
+      "known_target_similarity": 1.0,
+      "evidence_target": "NS5B protein",
+      "evidence_organism": "Hepatitis C virus",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "HCV NS5B",
+      "target": "RNA polymerase",
+      "rank": 3,
+      "drug_name": "dasabuvir",
+      "score": 0.933333,
+      "model_probability": 0.333333,
+      "known_target_similarity": 1.0,
+      "evidence_target": "NS5B protein",
+      "evidence_organism": "Hepatitis C virus",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "HCV NS5B",
+      "target": "RNA polymerase",
+      "rank": 4,
+      "drug_name": "beclabuvir",
+      "score": 0.929361,
+      "model_probability": 0.293611,
+      "known_target_similarity": 1.0,
+      "evidence_target": "RNA-directed RNA polymerase",
+      "evidence_organism": "Hepacivirus C",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "HCV NS5B",
+      "target": "RNA polymerase",
+      "rank": 5,
+      "drug_name": "fidaxomicin",
+      "score": 0.660046,
+      "model_probability": 0.390185,
+      "known_target_similarity": 0.75,
+      "evidence_target": "DNA-directed RNA polymerase",
+      "evidence_organism": "Peptoclostridium difficile (strain 630)",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "高血压 ACE",
+      "target": "ACE",
+      "rank": 1,
+      "drug_name": "spirapril",
+      "score": 0.951972,
+      "model_probability": 0.519722,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Angiotensin-converting enzyme",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "高血压 ACE",
+      "target": "ACE",
+      "rank": 2,
+      "drug_name": "enalaprilat",
+      "score": 0.951093,
+      "model_probability": 0.510926,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Angiotensin-converting enzyme",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "高血压 ACE",
+      "target": "ACE",
+      "rank": 3,
+      "drug_name": "lisinopril",
+      "score": 0.950861,
+      "model_probability": 0.508611,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Angiotensin-converting enzyme",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "高血压 ACE",
+      "target": "ACE",
+      "rank": 4,
+      "drug_name": "captopril",
+      "score": 0.950046,
+      "model_probability": 0.500463,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Angiotensin-converting enzyme",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "高血压 ACE",
+      "target": "ACE",
+      "rank": 5,
+      "drug_name": "enalapril",
+      "score": 0.949704,
+      "model_probability": 0.497037,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Angiotensin-converting enzyme",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "2型糖尿病 DPP4",
+      "target": "DPP4",
+      "rank": 1,
+      "drug_name": "saxagliptin",
+      "score": 0.955815,
+      "model_probability": 0.558148,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Dipeptidyl peptidase 4",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "2型糖尿病 DPP4",
+      "target": "DPP4",
+      "rank": 2,
+      "drug_name": "vildagliptin",
+      "score": 0.952778,
+      "model_probability": 0.527778,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Dipeptidyl peptidase 4",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "2型糖尿病 DPP4",
+      "target": "DPP4",
+      "rank": 3,
+      "drug_name": "sitagliptin",
+      "score": 0.948481,
+      "model_probability": 0.484815,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Dipeptidyl peptidase 4",
+      "evidence_organism": "Rattus norvegicus",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "2型糖尿病 DPP4",
+      "target": "DPP4",
+      "rank": 4,
+      "drug_name": "teneligliptin",
+      "score": 0.947534,
+      "model_probability": 0.475344,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Dipeptidyl peptidase 4",
+      "evidence_organism": "Rattus norvegicus",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "2型糖尿病 DPP4",
+      "target": "DPP4",
+      "rank": 5,
+      "drug_name": "vidarabine",
+      "score": 0.9475,
+      "model_probability": 0.475,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Dipeptidyl peptidase 4",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "炎症疼痛 COX-2",
+      "target": "PTGS2",
+      "rank": 1,
+      "drug_name": "celecoxib",
+      "score": 0.945108,
+      "model_probability": 0.451082,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Prostaglandin G/H synthase 2",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "炎症疼痛 COX-2",
+      "target": "PTGS2",
+      "rank": 2,
+      "drug_name": "acemetacin",
+      "score": 0.944574,
+      "model_probability": 0.445741,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Prostaglandin G/H synthase 2",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "炎症疼痛 COX-2",
+      "target": "PTGS2",
+      "rank": 3,
+      "drug_name": "indomethacin",
+      "score": 0.943761,
+      "model_probability": 0.437606,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Prostaglandin G/H synthase 2",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "炎症疼痛 COX-2",
+      "target": "PTGS2",
+      "rank": 4,
+      "drug_name": "meloxicam",
+      "score": 0.943511,
+      "model_probability": 0.435115,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Prostaglandin G/H synthase 2",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "炎症疼痛 COX-2",
+      "target": "PTGS2",
+      "rank": 5,
+      "drug_name": "nimesulide",
+      "score": 0.94328,
+      "model_probability": 0.4328,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Prostaglandin G/H synthase 2",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "肿瘤 EGFR",
+      "target": "EGFR",
+      "rank": 1,
+      "drug_name": "docetaxel",
+      "score": 0.951185,
+      "model_probability": 0.511852,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Epidermal growth factor receptor",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "肿瘤 EGFR",
+      "target": "EGFR",
+      "rank": 2,
+      "drug_name": "sorafenib",
+      "score": 0.949518,
+      "model_probability": 0.495179,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Epidermal growth factor receptor",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "肿瘤 EGFR",
+      "target": "EGFR",
+      "rank": 3,
+      "drug_name": "montelukast",
+      "score": 0.948069,
+      "model_probability": 0.480688,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Epidermal growth factor receptor",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "肿瘤 EGFR",
+      "target": "EGFR",
+      "rank": 4,
+      "drug_name": "lenvatinib",
+      "score": 0.947222,
+      "model_probability": 0.472222,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Epidermal growth factor receptor",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    },
+    {
+      "case": "肿瘤 EGFR",
+      "target": "EGFR",
+      "rank": 5,
+      "drug_name": "axitinib",
+      "score": 0.94652,
+      "model_probability": 0.465198,
+      "known_target_similarity": 1.0,
+      "evidence_target": "Epidermal growth factor receptor",
+      "evidence_organism": "Homo sapiens",
+      "boundary": "计算筛选排序信号，不代表真实疗效或临床结论。"
+    }
+  ],
+  "model_comparison": [
+    {
+      "split": "random_pair_split",
+      "model": "extra_trees",
+      "train_examples": 29313,
+      "valid_examples": 7329,
+      "valid_positive_rate": 0.4999,
+      "seconds": 4.81,
+      "accuracy": 0.8798,
+      "balanced_accuracy": 0.8798,
+      "roc_auc": 0.9418,
+      "pr_auc": 0.9438,
+      "precision": 0.9116,
+      "recall": 0.8412,
+      "f1": 0.8749
+    },
+    {
+      "split": "random_pair_split",
+      "model": "hist_gradient_boosting",
+      "train_examples": 29313,
+      "valid_examples": 7329,
+      "valid_positive_rate": 0.4999,
+      "seconds": 27.74,
+      "accuracy": 0.8213,
+      "balanced_accuracy": 0.8213,
+      "roc_auc": 0.9039,
+      "pr_auc": 0.9045,
+      "precision": 0.8509,
+      "recall": 0.7789,
+      "f1": 0.8133
+    },
+    {
+      "split": "random_pair_split",
+      "model": "catboost",
+      "train_examples": 29313,
+      "valid_examples": 7329,
+      "valid_positive_rate": 0.4999,
+      "seconds": 10.93,
+      "accuracy": 0.8032,
+      "balanced_accuracy": 0.8032,
+      "roc_auc": 0.8868,
+      "pr_auc": 0.8907,
+      "precision": 0.8398,
+      "recall": 0.7495,
+      "f1": 0.792
+    },
+    {
+      "split": "target_group_split",
+      "model": "extra_trees",
+      "train_examples": 29385,
+      "valid_examples": 7257,
+      "valid_positive_rate": 0.4917,
+      "seconds": 6.71,
+      "accuracy": 0.7226,
+      "balanced_accuracy": 0.7184,
+      "roc_auc": 0.893,
+      "pr_auc": 0.8902,
+      "precision": 0.943,
+      "recall": 0.4638,
+      "f1": 0.6218
+    },
+    {
+      "split": "target_group_split",
+      "model": "hist_gradient_boosting",
+      "train_examples": 29385,
+      "valid_examples": 7257,
+      "valid_positive_rate": 0.4917,
+      "seconds": 36.58,
+      "accuracy": 0.7364,
+      "balanced_accuracy": 0.7341,
+      "roc_auc": 0.8403,
+      "pr_auc": 0.8406,
+      "precision": 0.8196,
+      "recall": 0.5947,
+      "f1": 0.6893
+    },
+    {
+      "split": "target_group_split",
+      "model": "catboost",
+      "train_examples": 29385,
+      "valid_examples": 7257,
+      "valid_positive_rate": 0.4917,
+      "seconds": 13.68,
+      "accuracy": 0.7371,
+      "balanced_accuracy": 0.7351,
+      "roc_auc": 0.8361,
+      "pr_auc": 0.833,
+      "precision": 0.8049,
+      "recall": 0.6141,
+      "f1": 0.6967
+    },
+    {
+      "split": "drug_group_split",
+      "model": "extra_trees",
+      "train_examples": 28336,
+      "valid_examples": 8306,
+      "valid_positive_rate": 0.5,
+      "seconds": 5.78,
+      "accuracy": 0.8,
+      "balanced_accuracy": 0.8,
+      "roc_auc": 0.8931,
+      "pr_auc": 0.901,
+      "precision": 0.8978,
+      "recall": 0.6771,
+      "f1": 0.772
+    },
+    {
+      "split": "drug_group_split",
+      "model": "hist_gradient_boosting",
+      "train_examples": 28336,
+      "valid_examples": 8306,
+      "valid_positive_rate": 0.5,
+      "seconds": 24.36,
+      "accuracy": 0.8033,
+      "balanced_accuracy": 0.8033,
+      "roc_auc": 0.8821,
+      "pr_auc": 0.8866,
+      "precision": 0.8452,
+      "recall": 0.7426,
+      "f1": 0.7906
+    },
+    {
+      "split": "drug_group_split",
+      "model": "catboost",
+      "train_examples": 28336,
+      "valid_examples": 8306,
+      "valid_positive_rate": 0.5,
+      "seconds": 9.31,
+      "accuracy": 0.7918,
+      "balanced_accuracy": 0.7918,
+      "roc_auc": 0.8748,
+      "pr_auc": 0.8825,
+      "precision": 0.8217,
+      "recall": 0.7455,
+      "f1": 0.7817
+    }
+  ],
+  "boundary": "Computational target-drug matching only; not biological activity, safety, dosing, or clinical evidence."
+}

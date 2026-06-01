@@ -1,0 +1,8 @@
+{
+  "item_id": "drugcentral_drug_target_interaction",
+  "source": "DrugCentral",
+  "url": "https://unmtid-dbs.net/download/DrugCentral/2021_09_01/drug.target.interaction.tsv.gz",
+  "local_path": "data_lake/drugcentral/2021_09_01/drug.target.interaction.tsv.gz",
+  "bytes": 779363,
+  "completed_at": "2026-05-29T18:59:23+0800"
+}
